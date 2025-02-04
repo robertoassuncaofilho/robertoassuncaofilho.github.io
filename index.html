@@ -1,14 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Friends Gallery</title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <style>
-        a { cursor: pointer; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBF Tecnologia - Soluções em Software e IA</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <div id="app"></div>
-<script type="text/javascript" src="main.js"></script></body>
+<body class="bg-gray-50">
+    <!-- Navegação -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-blue-600">RBF Tecnologia</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-600">Serviços</a>
+                    <a href="#contato" class="text-gray-700 hover:text-blue-600">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Transforme seu Negócio com Tecnologia</h1>
+            <p class="text-xl mb-8">Soluções personalizadas em desenvolvimento de software e inteligência artificial</p>
+            <a href="#contato" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
+                Fale Conosco
+            </a>
+        </div>
+    </header>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Desenvolvimento de Software</h3>
+                    <p class="text-gray-600">Criamos soluções sob medida para automatizar e otimizar seus processos empresariais.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-robot text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Automação com IA</h3>
+                    <p class="text-gray-600">Automatize seu atendimento com sistemas inteligentes que melhoram a experiência do cliente.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-lightbulb text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Consultoria em TI</h3>
+                    <p class="text-gray-600">Orientação especializada para implementar as melhores soluções tecnológicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="bg-gray-100 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-blue-600 w-8"></i>
+                        <a href="mailto:roberto@robertobuarque.com" class="text-gray-700 hover:text-blue-600">
+                            roberto@robertobuarque.com
+                        </a>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fab fa-whatsapp text-blue-600 w-8"></i>
+                        <a href="https://wa.me/5584994505009" class="text-gray-700 hover:text-blue-600">
+                            (84) 99450-5009
+                        </a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mwpvbzrl" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <input type="text" name="name" placeholder="Nome" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="email" placeholder="Email" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea name="message" placeholder="Mensagem" class="w-full p-2 border rounded h-32" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2025 RBF Tecnologia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
 </html>
